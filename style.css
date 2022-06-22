@@ -1,89 +1,102 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Sriracha&display=swap');
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
-body{
+html,body{
+    min-height: 100%vh;
     background-color: lightgray;
 }
+:root{
+    --FontH1:'Passion One', cursive; ;
+    --Fonts: 'Sriracha', cursive; ;
+}
+
 header{
-    
-    padding: 20px;
     background-color: black;
-    margin: -22px -10px
+    padding: 50px;
 }
 header h1{
-    padding-top: 25px;
-    padding-bottom: 0px;
+    font-family: var(--FontH1);
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 8vw;
+    font-variant: small-caps;
 }
 header p {
-    margin-top: -20px;
-    padding-top: -10px;
     color: white;
     text-align: center;
     font-size: 12px;
 }
-header a{
-    margin-top: 0px;
-    padding-top: 0px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
-main p{
-    padding: 30px 20px;
+section p{
+    padding: 30px 30px;
     line-height: 2.5em;
-}
-main p{
-    font-family: cursive;
+    font-family: var(--Fonts);
     font-weight: bolder;
+    font-size: 3.5vw;
+
 }
-.img p{
+section.img p{
     color: white;
     padding: 30px;
-    line-height: 2.5em;
+    line-height: 2em;
+    font-family: var(--Fonts);    font-weight: bolder;
     background-color: rgba(0, 0, 0, 0.432);
-    width: 250px;
+    display: inline-block;
     padding: 4px;
+    line-height: 3em;
 }
-.img{
+section.img{
     background-image: url(imagens/background001.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    width: 100vw;
-    height: 350px;
     padding: 30px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    box-shadow: inset 5px 5px 5px 0px black;
 }
-.img1 p{
+section.img1 p{
     color: white;
     padding: 30px;
-    line-height: 2.5em;
+    line-height: 1em;
+    font-family: var(--Fonts);
+    font-weight: bolder;
     background-color: rgba(0, 0, 0, 0.432);
-    width: 250px;
+    display: inline-block;
     padding: 4px;
-    
+    line-height: 3em;
 }
-.img1{
+section.img1{
     background-image: url(imagens/background002.jpg);
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 350px;
+    background-attachment: fixed;  
     padding: 30px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.537);
+
 }
 footer{
     background-color: black;
     color: white;
-    margin-bottom: -20px;
+    padding: 3px;
    text-align: center;
 }
 a{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 a:hover {
     text-decoration: underline;
